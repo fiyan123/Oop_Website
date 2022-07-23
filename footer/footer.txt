@@ -1,0 +1,58 @@
+<footer class="mt-70">
+        <div class="m-0">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 order-sm-0 order-md-0 bg-gray py-5">
+                            <img src="https://santrikoding.com/images/logo-black.png" class="mt-3 text-center" style="width: 300px">
+                            <p class="mt-2">Website Belajar Coding bahasa Indonesia terlengkap.</p>
+                            <div class="social mt-4" style="margin-bottom: 30px">
+                                <a href="https://www.facebook.com/com.santrikoding/"><img src="https://santrikoding.com/images/045-facebook.svg" style="width: 25px;" class="icon-footer"></a>
+
+                                <a href="https://t.me/santrikoding"><img src="https://santrikoding.com/images/telegram.svg" class="icon-footer"></a>
+                                <a href="https://github.com/SantriKoding-com"><img src="https://santrikoding.com/images/github-logo.svg" class="icon-footer"></a>
+                                <a href="https://youtube.com/c/SantriKoding"><img src="https://santrikoding.com/images/002-youtube.svg" class="icon-footer"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-8 order-sm-2 order-md-1 bg-light-custom py-4">
+                            <div class="row">
+                                <div class="col-md-4 col-6">
+                                    <h6 class="font-weight-bold">COMPANY</h6>
+                                    <hr>
+                                    <ul>
+                                        <li class="link-footer"><a href="/p/tentang">Tentang Kami</a></li>
+                                        <li class="link-footer"><a href="/p/team">Team Kami</a></li>
+                                        <li class="link-footer"><a href="/p/faq">FAQ</a></li>
+                                        <li class="link-footer"><a href="/p/syarat-layanan">Syarat Layanan</a></li>
+                                        <li class="link-footer"><a href="/p/kebijakan-privasi">Kebijakan Privasi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <h6 class="font-weight-bold">BELAJAR</h6>
+                                    <hr>
+                                    <ul>
+                                        <li class="link-footer"><a href="https://santrikoding.com/artikel">Artikel</a></li>
+                                        <li class="link-footer"><a href="https://santrikoding.com/flash-sale">Flash Sale</a></li>
+                                        <li class="link-footer"><a href="https://santrikoding.com/ebook">Ebook</a></li>
+                                        <li class="link-footer"><a href="https://santrikoding.com/bundles">Ebook Bundles</a></li>
+                                        <li class="link-footer"><a href="https://santrikoding.com/kelas">Kelas Online</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="font-weight-bold">KOMUNITAS</h6>
+                                    <hr>
+                                    <ul>
+                                        <li class="link-footer"><a href="https://santrikoding.com/reviews">Ulasan Members</a></li>
+                                        <li class="link-footer"><a href="https://santrikoding.com/leaderboard">Leaderboard</a></li>
+                                        <li class="link-footer"><a href="https://santrikoding.com/cek-sertifikat">Cek Sertifikat</a></li>
+                                        <li class="link-footer"><a href="https://t.me/santrikoding">Group Telegram</a></li>
+                                        <li class="link-footer"><a href="https://discord.gg/NQRn52eqBH">Komunitas Discord</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
