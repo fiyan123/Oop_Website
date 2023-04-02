@@ -1,81 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+        <title>Hello, world!</title>
+    </head>
+<body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Oop_Website/dosen">Dosen <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Oop_Website/mahasiswa">Mahasiswa <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-            <center><h2>Dosen</h2></center>
+        
         <!-- CARDs -->
-        <div class="container">
-        <div class="card">
-            <div class="card-header">
-                Edit Dosen
-            </div>
-            <div class="card-body">
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-header" align="center">
+                    Edit Dosen
+                </div>
+                <div class="card-body">
 
-            <?php
-                include '../database.php';
-                $dosen = new Dosen();
-                foreach ($dosen->edit($_GET['id']) as $data) {
-                    $id = $data['id'];
-                    $nipd = $data['nipd'];
-                    $nama = $data['nama'];
-                    $mata_kuliah = $data['mata_kuliah'];
-                }
-            ?>
-            
-            <form action="../dosen/proses.php" method="post">
-                <input type="hidden" name="aksi" value="update">
-                <input type="hidden" name="id" value="<?php echo $id; ?>">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">NIPD</label> 
-                        <input type="text" class="form-control" name="nipd" value="<?php echo $nipd; ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nama</label>
-                        <input type="text" class="form-control" name="nama" value="<?php echo $nama; ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Mata Kuliah</label>
-                        <input type="text" class="form-control" name="mata_kuliah" value="<?php echo $mata_kuliah; ?>">
-                    </div>
-                    <button type="submit" name="save" class="btn btn-primary">Simpan</button>
-                </form>
-
+                <?php
+                    include '../database.php';
+                    $dosen = new Dosen();
+                    foreach ($dosen->edit($_GET['id']) as $data) {
+                        $id = $data['id'];
+                        $nipd = $data['nipd'];
+                        $nama = $data['nama'];
+                        $mata_kuliah = $data['mata_kuliah'];
+                    }
+                ?>
+                
+                <form action="../dosen/proses.php" method="post">
+                    <input type="hidden" name="aksi" value="update">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">NIPD</label> 
+                            <input type="text" class="form-control" name="nipd" value="<?php echo $nipd; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nama</label>
+                            <input type="text" class="form-control" name="nama" value="<?php echo $nama; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mata Kuliah</label>
+                            <input type="text" class="form-control" name="mata_kuliah" value="<?php echo $mata_kuliah; ?>">
+                        </div>
+                        <button type="submit" name="save" class="btn btn-primary">Simpan</button>
+                    </form>
+                </div>
             </div>
-        </div>
         </div>
 
 

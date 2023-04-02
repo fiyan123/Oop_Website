@@ -1,6 +1,6 @@
 <?php
 class database{
-    public $host = "localhost", $user ="root", $pass = "" ,$db="rpl3";
+    public $host = "localhost", $user ="root", $pass ="password" ,$db="phpNative";
     public $koneksi;
 
     public function __construct(){
@@ -13,7 +13,7 @@ class database{
 
         );
         if($this->koneksi){
-            //echo "berhasil";
+            // echo "berhasil";
         }
         else{
             echo"koneksi database gagal";
