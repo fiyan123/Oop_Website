@@ -4,8 +4,8 @@ class mahasiswa extends database{
     //menampilkan data mahasiswa ke index.php
     public function index(){
         $datamahasiswa = mysqli_query($this->koneksi,"
-        SELECT mahasiswa.id , mahasiswa.nim ,
-        mahasiswa.nama , dosen.nama as 'nama_dosen'
+        SELECT  mahasiswa.id , mahasiswa.nim ,
+        mahasiswa.nama ,mahasiswa.jenis_kelamin , dosen.nama as 'nama_dosen'
         FROM mahasiswa
         JOIN dosen 
         ON mahasiswa.id_dosen = dosen.id ");
@@ -13,8 +13,8 @@ class mahasiswa extends database{
         return $datamahasiswa;
     }
 
-    public function create($nim,$nama,$id_dosen){
-        mysqli_query($this->koneksi,"insert into mahasiswa values (null,'$nim','$nama','$id_dosen') ");
+    public function create($nim,$nama,$jenis_kelamin,$id_dosen){
+        mysqli_query($this->koneksi,"insert into mahasiswa values (null,'$nim','$nama','$jenis_kelamin','$id_dosen') ");
     }
 
     //memilih data mahasiswa yang akan di ubah
@@ -25,15 +25,15 @@ class mahasiswa extends database{
     }
 
     //merubah data mahasiswa
-    public function update($id,$nim,$nama,$id_dosen){
-        mysqli_query($this->koneksi,"update mahasiswa set nim ='$nim', nama ='$nama', id_dosen ='$id_dosen' where id='$id' ");
+    public function update($id,$nim,$nama,$jenis_kelamin,$id_dosen){
+        mysqli_query($this->koneksi,"update mahasiswa set nim ='$nim', nama ='$nama',jenis_kelamin='$jenis_kelamin', id_dosen ='$id_dosen' where id='$id' ");
     }
 
     //menampilkan data berdasarkan id
     public function show($id){
         $datamahasiswa = mysqli_query($this->koneksi,"
         SELECT mahasiswa.id , mahasiswa.nim ,
-        mahasiswa.nama , dosen.nama as 'nama_dosen'
+        mahasiswa.nama , mahasiswa.jenis_kelamin , dosen.nama as 'nama_dosen'
         FROM dosen
         JOIN mahasiswa
         ON dosen.id = mahasiswa.id_dosen
