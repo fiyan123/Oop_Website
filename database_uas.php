@@ -1,6 +1,6 @@
 <?php
 class database{
-    public $host = "localhost", $user ="root", $pass = "" ,$db="tugas_uas";
+    public $host = "localhost", $user ="root", $pass = "password" ,$db="tugas_uas";
     public $koneksi;
 
     public function __construct(){

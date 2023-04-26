@@ -54,13 +54,13 @@
                 <a class="nav-link" href="home.php">Utama<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/ian/jurusan/index.php">Jurusan</a>
+                <a class="nav-link" href="/Oop_Website/jurusan/index.php">Jurusan</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/ian/pendaftaran/index.php">Pendaftaran</a>
+                <a class="nav-link" href="/Oop_Website/pendaftaran/index.php">Pendaftaran</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/ian/pembayaran/index.php">Pembayaran</a>
+                <a class="nav-link" href="/Oop_Website/pembayaran/index.php">Pembayaran</a>
             </li>
             </ul>
         </div>
